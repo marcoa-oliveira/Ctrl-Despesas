@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Controle de Despesas - HTML / CSS / JS</title>
+</head>
+<body>
+
+    <main>
+        <h1>Controle de Despesas</h1>
+        <section class="section__saldoAtual">
+            <p>Saldo Atual</p>
+            <p><span id="saldoAtual">0.00</span></p>
+        </section>
+        <section class="section__balanco">
+            <div>
+                <h2>Receitas</h2>
+                <p><span id="receita__balanco">0.00</span></p>
+            </div>
+            <div>
+                <h2>Despesas</h2>
+                <p><span id="despesas__balanco">0.00</span></p>
+            </div>
+        </section>
+        <section class="section__transacoes">
+            <h2>Transações</h2>
+            <label for="showMore">Exibir Extrato Completo</label>
+            <input type="checkbox" id="showMore">
+            <ul class="transactions" id="transactions"></ul>
+        </section>
+        <section class="add__transacoes">
+            <h2>Adicionar Transação</h2>
+            <form action="" id="form">
+                <label for="transasao">Nome</label>
+                <input type="text" id="transacao" name="transacao">
+                <label for="transacao_value">Valor <span>(negativo - despesas / positivo - receitas)</span></label>
+                <input type="number" name="transacao_value" id="transacao_value">
+                <button>Adicionar</button>
+            </form>
+            <a href="https://www.youtube.com/watch?v=xarRciYWT5Q" target="_blank"> Atividade de referência</a>
+        </section>       
+    </main>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
